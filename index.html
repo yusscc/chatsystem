@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Messaging App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="app">
+        <div id="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                <h2>John Doe</h2>
+                <p class="status">Online</p>
+            </div>
+            <input type="text" id="search" placeholder="Search conversations">
+            <div id="conversation-list">
+                <div class="conversation">
+                    <img src="profile2.jpg"  class="conversation-img" alt="profile2">
+                    <div class="conversation-info">
+                        <span>Jane Smith</span>
+                        <p class="message-preview">Hey, are you free to chat?</p>
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="profile3.jpg"  class="conversation-img" alt="profile3">
+                    <div class="conversation-info">
+                        <span>Alex Green</span>
+                        <p class="message-preview">Let's catch up later!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-area">
+            <div id="chat-header">
+                <img src="profile2.jpg" class="header-img" alt="profile2">
+                <span>Jane Smith</span>
+                <span class="status">Online</span>
+            </div>
+
+            <div id="messages">
+                <div class="message received">
+                    <div class="message-bubble">
+                        <p>Hello John, how are you?</p>
+                        <span class="timestamp">10:45 AM</span>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <div class="message-bubble">
+                        <p>I'm good, thanks! How about you?</p>
+                        <span class="timestamp">10:46 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="message-input">
+                <input type="text" id="message-text" placeholder="Type a message...">
+                <button id="send-message">Send</button>
+                <div class="icons">
+                    <button id="emoji-icon">😊</button>
+                    <button id="attachment-icon">📎</button>
+                    <button id="voice-icon">🎙️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
